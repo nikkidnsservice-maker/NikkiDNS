@@ -1,0 +1,61 @@
+<svg
+  class="icon-svg"
+  viewBox="0 0 100 100"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <!-- Gradient for the main icon color -->
+    <linearGradient
+      id="shieldGradient"
+      x1="50"
+      y1="0"
+      x2="50"
+      y2="100"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#4F46E5" />
+      <stop offset="1" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. The Shield Shape (Base) -->
+  <path
+    d="M50 0 L10 15 V50 C10 75 50 100 50 100 C50 100 90 75 90 50 V15 L50 0 Z"
+    fill="url(#shieldGradient)"
+    stroke="#C4B5FD"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+
+  <!-- 2. Stylized 'N' (Focusing on network flow/security) -->
+  <path
+    d="M30 25 L30 75 M70 25 L70 75 M30 50 H70 M50 25 V75"
+    stroke="#FFFFFF"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="opacity-70"
+  />
+  <!-- The stylized N is built from vertical and horizontal lines to give it a clean, interconnected look -->
+  <path
+    d="M30 25 L70 75"
+    stroke="#FFFFFF"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- 3. Small Lock/Connection Indicator at the bottom of the shield -->
+  <circle cx="50" cy="75" r="5" fill="#FFFFFF" />
+  <path
+    d="M45 75 H55 V78 C55 79.6569 53.6569 81 52 81 H48 C46.3431 81 45 79.6569 45 78 V75 Z"
+    fill="#8B5CF6"
+  />
+  <path
+    d="M48 71 V75 M52 71 V75"
+    stroke="#8B5CF6"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+</svg>
